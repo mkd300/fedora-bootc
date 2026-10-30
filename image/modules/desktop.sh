@@ -1,3 +1,9 @@
-PACKAGES_TO_INSTALL+=(gdm nautilus ptyxis)
+PACKAGES_TO_INSTALL+=(
+    gdm
+    gnome-console
+    nautilus
+)
 
-SERVICES_TO_ENABLE+=(gdm.service)
+SERVICES_TO_ENABLE+=(
+    gdm.service
+)

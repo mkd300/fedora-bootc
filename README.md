@@ -1,9 +1,10 @@
 # BUILD IMAGE
-~/.local/share/distrobox/fedora-bootc/tests/build.sh
+./tests/build.sh
 
 # VIRTUAL MACHINE
-~/.local/share/distrobox/fedora-bootc/tests/vm.sh
+./tests/vm.sh
 
 # PROGRESS
 
 ☑️ GNOME
+☑️ AUDIO
