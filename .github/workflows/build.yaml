@@ -1,7 +1,7 @@
 ---
 on:
   schedule:
-    - cron: "0 6 * * 2"
+    - cron: "45 6 * * 4"
       timezone: "America/Sao_Paulo"
 
   push:
@@ -36,13 +36,13 @@ jobs:
       - name: Build image
         shell: bash
         run: |
-          image="ghcr.io/${GITHUB_REPOSITORY,,}"
+          image="ghcr.io/${GITHUB_REPOSITORY,,}:latest"
 
           podman build \
             --pull=always \
             --platform linux/amd64 \
             --file Containerfile \
-            --tag "${image}:45" \
+            --tag "$image" \
             .
 
           printf 'IMAGE=%s\n' "$image" >> "$GITHUB_ENV"
@@ -57,4 +57,4 @@ jobs:
               --username "$GITHUB_ACTOR" \
               --password-stdin
 
-          podman push "${IMAGE}:45"
+          podman push "$IMAGE"
