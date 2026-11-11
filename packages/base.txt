@@ -1,0 +1,67 @@
+# System
+systemd-oomd-defaults
+uresourced
+
+# Package Management
+flatpak
+
+# Hardware
+pciutils
+thermald
+usbutils
+
+# Firmware
+alsa-sof-firmware
+iwlwifi-mvm-firmware
+
+# Security
+audit
+firewalld
+
+# Network
+NetworkManager-wifi
+wpa_supplicant
+
+# Bluetooth
+bluez
+
+# Audio
+alsa-ucm
+alsa-utils
+pipewire-alsa
+pipewire-pulseaudio
+pipewire-utils
+wireplumber
+
+# Graphics
+libglvnd-gles
+libva-intel-media-driver
+librsvg2
+mesa-dri-drivers
+mesa-libEGL
+mesa-vulkan-drivers
+
+# Storage
+compsize
+
+# Printing
+cups
+
+# Portals
+xdg-desktop-portal
+
+# Fonts
+default-fonts-core-emoji
+default-fonts-core-math
+default-fonts-core-mono
+default-fonts-core-sans
+default-fonts-core-serif
+
+# Localization
+glibc-langpack-en
+glibc-langpack-pt
+
+# Utilities
+bash-color-prompt
+rsync
+zip
